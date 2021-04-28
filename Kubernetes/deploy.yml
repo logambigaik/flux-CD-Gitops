@@ -1,0 +1,24 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: python-deploy
+  namespace: python-namespace
+  labels:
+    app: python-deploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: python-hello
+  template:
+    metadata:
+      labels:
+        app: python-hello
+    spec:
+      containers:
+      - name: python-container
+        image: klogambigai/awslinux-python:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8000
