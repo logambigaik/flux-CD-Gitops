@@ -13,4 +13,5 @@ spec:
       port: 8000
       targetPort: 8000
       # nodePort: 30992  
-      nodePort: 30991 # updated 30992 to 30991 for --sync-garbage-collection=true enabled in flux
+      nodePort: 30991 # flux-sync after updating flux pod
+      nodePort: 30993 # updated 30991 to 30993 for --sync-garbage-collection=true enabled in flux
