@@ -12,4 +12,5 @@ spec:
       protocol: TCP
       port: 8000
       targetPort: 8000
-      nodePort: 30992
+      # nodePort: 30992  
+      nodePort: 30991 # updated 30992 to 30991 for --sync-garbage-collection=true enabled in flux
