@@ -1,7 +1,7 @@
 kind: Service
 metadata:
   name: python-hello
-  namespace: python-namspace
+  namespace: python-namespace
 spec:
   type: NodePort
   selector:
