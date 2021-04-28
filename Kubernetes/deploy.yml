@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: python-deploy
-  namespace: python-ns
+  namespace: python-namespace
   labels:
     app: python-deploy
 spec:
